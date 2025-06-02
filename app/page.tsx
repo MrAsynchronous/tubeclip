@@ -139,7 +139,6 @@ export default function Home() {
   const resetForm = () => {
     setUrl('');
     setFormat(null);
-    setQuality('');
     setAudioQuality([1]);
     setVideoQuality([1]);
     setVideoInfo(null);
@@ -276,7 +275,6 @@ export default function Home() {
                     }`}
                                          onClick={() => {
                        setFormat('mp3');
-                       setQuality('');
                        setAudioQuality([1]); // Reset to 192kbps
                      }}
                   >
@@ -300,7 +298,6 @@ export default function Home() {
                     }`}
                                          onClick={() => {
                        setFormat('mp4');
-                       setQuality('');
                        setVideoQuality([1]); // Reset to 1080p
                      }}
                   >

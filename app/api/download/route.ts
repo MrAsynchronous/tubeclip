@@ -1,10 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Readable, PassThrough } from 'stream';
 import ffmpeg from 'fluent-ffmpeg';
-import ffmpegPath from '@ffmpeg-installer/ffmpeg';
-
-// Set FFmpeg path for Vercel deployment
-ffmpeg.setFfmpegPath(ffmpegPath.path);
 
 export async function POST(request: NextRequest) {
   try {
